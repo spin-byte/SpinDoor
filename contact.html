@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinDoor | Chat With Us</title>
+    <meta name="description" content="Chat with SpinDoor on WhatsApp. Get a quick quote or book your laundry pickup instantly.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(135deg, #FF007A, #6200EA);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 3rem 2.5rem;
+            max-width: 420px;
+            width: 100%;
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        @keyframes popIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .icon { font-size: 5rem; margin-bottom: 1.2rem; display: block; animation: bounce 1s infinite alternate; }
+        @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(-12px); } }
+        h1 { font-family: 'Fredoka', sans-serif; font-size: 2.2rem; margin-bottom: 0.5rem; }
+        p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; line-height: 1.5; }
+        .btn-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(37,211,102,0.4);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+        .timer { margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.7; }
+        .logo-link { display: block; margin-top: 1.5rem; color: white; opacity: 0.6; font-size: 0.85rem; text-decoration: none; }
+        .logo-link:hover { opacity: 1; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="icon">🧺</span>
+        <h1>Get A Quick Quote!</h1>
+        <p>WhatsApp us your requirements and we'll send you a <strong>price in minutes! ⚡</strong></p>
+        <a class="btn-wa" href="https://wa.me/919032822594?text=Hi%20SpinDoor!%20I%27d%20like%20to%20get%20a%20quote%20for%20laundry%20service%20%F0%9F%A7%BA">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.522 5.855L.057 23.882l6.197-1.624A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.663-.523-5.176-1.432l-.371-.221-3.843 1.007 1.027-3.748-.242-.386A9.975 9.975 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+            </svg>
+            Get My Quote Now
+        </a>
+        <p class="timer" id="timer">Redirecting in <strong>3</strong> seconds...</p>
+        <a href="https://spindoor.in" class="logo-link">← Back to SpinDoor.in</a>
+    </div>
+    <script>
+        let s = 3;
+        const t = document.getElementById('timer');
+        const c = setInterval(() => {
+            s--;
+            t.innerHTML = `Redirecting in <strong>${s}</strong> seconds...`;
+            if (s <= 0) {
+                clearInterval(c);
+                t.textContent = 'Opening WhatsApp...';
+                window.location.href = 'https://wa.me/919032822594?text=Hi%20SpinDoor!%20I%27d%20like%20to%20get%20a%20quote%20for%20laundry%20service%20%F0%9F%A7%BA';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

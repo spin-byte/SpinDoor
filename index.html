@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SpinDoor - Hyderabad's #1 Premium Laundry & Dry Cleaning Service. We offer wash, fold, and dry cleaning with fast pickup in Tolichowki, Gachibowli, and nearby areas.">
+    <meta name="keywords" content="Laundry in Hyderabad, Dry Cleaning Hyderabad, Wash and Fold, Premium Laundry Service, SpinDoor Laundry, Gachibowli Laundry, Tolichowki Laundry">
+    <meta name="author" content="SpinDoor">
+    <meta property="og:title" content="SpinDoor | Premium Laundry Service in Hyderabad">
+    <meta property="og:description" content="We handle the dirty work so you don't have to. Fast, reliable laundry pickup and delivery in Hyderabad.">
+    <meta property="og:type" content="website">
+    <title>SpinDoor | Premium Laundry & Dry Cleaning Service in Hyderabad</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="canonical" href="https://spindoor.in" />
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18157199184"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18157199184');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32D7RDQ2L5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-32D7RDQ2L5');
+</script>
+</head>
+<body>
+    <!-- Top Announcement Banner -->
+    <div class="top-banner" id="top-banner">
+        📍 <strong>Serving:</strong> Tolichowki &bull; Shaikpet &bull; Gachibowli &bull; Mehdipatnam &bull; Attapur &bull; HiTech City &bull; Tukkuguda, Shamshabad &bull; Pahadi Shareef &bull; Balapur &bull; L.B. Nagar, and Nearby Areas.
+    </div>
+    <script>
+        function adjustNavbar() {
+            const banner = document.getElementById('top-banner');
+            const navbar = document.querySelector('.navbar');
+            const main = document.querySelector('main');
+            const bannerH = banner.offsetHeight;
+            navbar.style.top = bannerH + 'px';
+            // Also push main content down so nothing hides behind fixed header
+            const navbarH = navbar.offsetHeight;
+            if (main) main.style.paddingTop = (bannerH + navbarH) + 'px';
+        }
+        window.addEventListener('load', adjustNavbar);
+        window.addEventListener('resize', adjustNavbar);
+    </script>
+
+    <!-- Gen-Z Floating Emojis Background -->
+    <div class="floating-emojis">
+        <div class="emoji e1">🧦</div>
+        <div class="emoji e2">🫧</div>
+        <div class="emoji e3">💀</div>
+        <div class="emoji e4">🔥</div>
+        <div class="emoji e5">👕</div>
+        <div class="emoji e6">✨</div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-inner">
+            <div class="logo-container">
+                <img src="new_logo.png" alt="SpinDoor Logo" class="brand-logo">
+                <span class="brand-name">SpinDoor</span>
+            </div>
+            <nav>
+                <a href="#about-us" class="nav-link">About Us</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#booking" class="btn-primary">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with Split Layout (Form moved up!) -->
+        <section class="hero-split">
+            
+            <!-- Left Side: Fun Text & Mascot -->
+            <div class="hero-text">
+                <div class="laundry-animated-label">✨ Premium Laundry & Dry Cleaning Service ✨</div>
+                <div class="bumping-phone">
+                    <a href="tel:+919032822594">📞 Call Now To Book: +91 9032822594</a>
+                </div>
+                <h1 id="hero-title" class="bounce-in">Your Mom Called. She's Tired Of Your Laundry.</h1>
+                <p id="hero-subtitle" class="fade-in">Hyderabad's most unapologetically premium laundry service. We wash, dry, and fold so you can go back to doomscrolling. You're welcome. 💅</p>
+                
+                <!-- Mascot Image playfully floating here -->
+                <div class="mascot-container">
+                    <img src="new_logo.png" alt="SpinDoor Mascot" class="mascot-img float-animation">
+                </div>
+            </div>
+
+            <!-- Right Side: Booking Form -->
+            <div class="hero-form" id="booking">
+                <div class="booking-container">
+                    <h2 id="form-title">Drop Your Laundry Baggage</h2>
+                    <p id="form-subtitle">Fill this out. We'll grab your dirty clothes before they mutate. 🦠</p>
+                    
+                    <form id="laundry-form" class="laundry-form">
+                        <div class="input-group">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number (Any Format)" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <textarea id="address" name="address" placeholder="Pickup Address" rows="2" required></textarea>
+                        </div>
+                        
+                        <div class="input-row">
+                            <div class="input-group half">
+                                <i class="fa-solid fa-jug-detergent"></i>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option value="Wash & Fold">Wash & Fold</option>
+                                    <option value="Dry Cleaning">Dry Cleaning</option>
+                                    <option value="Ironing Only">Ironing Only</option>
+                                    <option value="The Works">The Works</option>
+                                </select>
+                            </div>
+                            <div class="input-group half">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn" class="btn-submit">
+                            <span class="btn-text">Schedule Pickup</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Message Container -->
+                    <div id="success-message" class="success-message hidden">
+                        <div class="washing-machine-loader">
+                            <div class="machine-door"></div>
+                        </div>
+                        <h3>Booking Confirmed!</h3>
+                        <p>Your laundry is in good hands. We'll contact you shortly!</p>
+                    </div>
+                    <!-- Error Message -->
+                    <div id="error-message" class="error-message hidden">
+                        <p>Oops! Something went wrong. Please try again.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="how-it-works" style="background: #f8f9fa;">
+            <div class="how-it-works-inner" style="max-width: 800px;">
+                <h2 class="section-title">About Us (The Laundry Nerds) 🤓</h2>
+                <p style="font-size: 1.2rem; color: #555; line-height: 1.8; text-align: center;">
+                    Look, we're not going to hit you with a boring corporate backstory. We started SpinDoor because we realized the human race spends an unacceptable amount of time staring at tumbling socks. <br><br>
+                    We are a team of certified laundry nerds dedicated to rescuing you from detergent spills, accidentally shrinking your favorite sweaters, and the absolute tyranny of the "laundry chair". <br><br>
+                    <strong>You live your life. We'll handle the dirty work. 🧼✨</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="how-it-works-inner">
+                <h2 class="section-title">How SpinDoor Works</h2>
+                <div class="cards-container">
+                    <div class="card card-1">
+                        <div class="icon-circle"><i class="fa-solid fa-basket-shopping"></i></div>
+                        <h3>1. You Book</h3>
+                        <p>Schedule a pickup in 30 seconds.</p>
+                    </div>
+                    <div class="card card-2">
+                        <div class="icon-circle"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h3>2. We Collect</h3>
+                        <p>Our friendly drivers grab your dirty piles.</p>
+                    </div>
+                    <div class="card card-3">
+                        <div class="icon-circle"><i class="fa-solid fa-shirt"></i></div>
+                        <h3>3. We Wash & Fold</h3>
+                        <p>Fresh, clean, and smelling like magic.</p>
+                    </div>
+                    <div class="card card-4">
+                        <div class="icon-circle"><i class="fa-solid fa-house-chimney"></i></div>
+                        <h3>4. We Deliver</h3>
+                        <p>Back to your door, ready to wear!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 3rem 1rem; background: var(--secondary-color); color: white;">
+        <img src="charminar.png" alt="Charminar Hyderabad" style="height: 100px; margin-bottom: 15px; border-radius: 15px; opacity: 0.95; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+        <h2 style="font-size: 1.8rem; margin-bottom: 10px; font-family: var(--font-heading);">Proudly Built in Hyderabad ❤️</h2>
+        <p style="font-size: 1.1rem; color: #f0f0f0; max-width: 600px; margin: 0 auto; line-height: 1.5;">Serving Tolichowki, Shaikpet, Gachibowli, Mehdipatnam, Attapur, HiTech City & Nearby Areas</p>
+        <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.7;">&copy; 2026 SpinDoor Laundry. All wrinkles reserved.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button Container -->
+    <div class="whatsapp-container">
+        <div class="whatsapp-tooltip">
+            Slide into our DMs ✨
+            <div class="tooltip-tail"></div>
+        </div>
+        <a href="https://wa.me/919032822594?text=Hi%20SpinDoor!%20I Want%20To%20Book%20Laundry%20Service." class="whatsapp-float pulse-whatsapp-anim" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+        </a>
+    </div>
+
+    <script>
+        // Inline Quote Logic to guarantee execution and bypass any external JS caching issues.
+        const sarcasticQuotesList = [
+            {
+                heroTitle: "Your Mom Called. She's Tired Of Your Laundry.",
+                heroSubtitle: "Hyderabad's most unapologetically premium laundry service. We wash, dry, and fold so you can go back to doomscrolling. You're welcome. 💅",
+                formTitle: "Drop Your Laundry Baggage",
+                formSubtitle: "Fill this out. We'll grab your dirty clothes before they mutate. 🦠"
+            },
+            {
+                heroTitle: "Stop Wearing Inside-Out Underwear.",
+                heroSubtitle: "We know your secret. Let us wash your clothes before your roommate kicks you out. Professional laundry for lazy geniuses. ✨",
+                formTitle: "Admit Defeat. Book Laundry.",
+                formSubtitle: "Enter your details. We'll handle the biohazards in your laundry hamper. ☣️"
+            },
+            {
+                heroTitle: "You Have Nothing To Wear. We Can Fix That.",
+                heroSubtitle: "Stop pretending that shirt isn't stained. Hand it over. We'll make it smell like success and fresh fabric softener. 🫧",
+                formTitle: "Save My Clothes From Myself",
+                formSubtitle: "Quick laundry booking. Zero judgement on how long it's been in the basket. 🤫"
+            },
+            {
+                heroTitle: "Laundry Day? More Like Laundry 5-Minutes.",
+                heroSubtitle: "Why waste 3 hours separating whites and darks when you can just pay us to do it? Go watch another episode, we got this. 📺",
+                formTitle: "Summon The Laundry Fairies",
+                formSubtitle: "Tell us where to go. We'll make the dirty pile disappear. 🪄"
+            },
+            {
+                heroTitle: "Washing Clothes Is Not A Vibe.",
+                heroSubtitle: "Adulting is hard. Laundry shouldn't be. Tap a few buttons and we'll magically return your wardrobe fresh and folded. 💯",
+                formTitle: "Take My Money, Do My Laundry",
+                formSubtitle: "Drop your address below. The rescue mission starts now. 🚁"
+            },
+            {
+                heroTitle: "The 'Laundry Chair' Is Getting Full.",
+                heroSubtitle: "You know the one. The chair in your bedroom that hasn't seen the light of day since 2023. Let us empty it for you. 🪑",
+                formTitle: "Free The Laundry Chair",
+                formSubtitle: "Enter your details. We'll make the mountain of clothes disappear."
+            },
+            {
+                heroTitle: "Your Clothes Smell Like Regret.",
+                heroSubtitle: "We can fix that. Hand over the weekend damage and we'll return it smelling like responsible life choices. 🌿",
+                formTitle: "Cleanse My Sins (And Clothes)",
+                formSubtitle: "Fill out the form for a laundry pickup. We promise not to ask questions."
+            },
+            {
+                heroTitle: "We Know You Just Sprayed Febreze On That.",
+                heroSubtitle: "Perfume doesn't count as washing, babes. Give us your hoodies and we'll give them an actual spa day. 🛁",
+                formTitle: "Do It The Right Way",
+                formSubtitle: "Quick booking. Real detergent. Real clean."
+            },
+            {
+                heroTitle: "Outsource Your Chores. Protect Your Peace.",
+                heroSubtitle: "Doing laundry is bad for your mental health. Let SpinDoor handle the dirty work while you focus on doing absolutely nothing. 🧘‍♀️",
+                formTitle: "Secure The Peace. Book Laundry.",
+                formSubtitle: "Where should we pick up your laundry stress? 📍"
+            },
+            {
+                heroTitle: "Doing Laundry Is So 2019.",
+                heroSubtitle: "Welcome to the future, where your clothes magically wash, dry, and fold themselves (with our help, obviously). 🚀",
+                formTitle: "Welcome To The Future",
+                formSubtitle: "Schedule a pickup before you run out of socks."
+            },
+            {
+                heroTitle: "Give Us The Stain You Can't Explain.",
+                heroSubtitle: "Coffee? Ink? Mysterious 3 AM pizza sauce? We don't judge, we just erase. Premium stain removal included. 🍕",
+                formTitle: "Erase My Stained Mistakes",
+                formSubtitle: "Drop your details for a laundry pickup."
+            },
+            {
+                heroTitle: "Because Adulting Is Hard Enough.",
+                heroSubtitle: "You paid taxes, went to work, and drank water today. Don't push it by doing laundry too. We got you. 🏆",
+                formTitle: "I Need Laundry Help",
+                formSubtitle: "We're basically your laundry therapists. Book a wash now."
+            },
+            {
+                heroTitle: "Stop Sniffing Your Clothes To Check If They're Clean.",
+                heroSubtitle: "If you have to sniff it, it needs to be washed. Send it to SpinDoor and end the guessing game. 👃",
+                formTitle: "End The Clothes Sniff Test",
+                formSubtitle: "Let's get your laundry sorted. Enter your info."
+            },
+            {
+                heroTitle: "We See Your Laundry Pile. We Are Judging You.",
+                heroSubtitle: "Just kidding. We've seen worse. Much worse. Hand it over and we'll make it look like you have your life together. 👀",
+                formTitle: "Help Me Fake Clean Clothes",
+                formSubtitle: "Fill this out and we'll wash the rest."
+            },
+            {
+                heroTitle: "You Weren't Going To Fold It Anyway.",
+                heroSubtitle: "Let's be honest. It was going to sit in the basket for a week. Let us return it perfectly folded and ready to wear. 🧺",
+                formTitle: "Fold My Laundry For Me",
+                formSubtitle: "Book a pickup. We fold clothes like origami masters."
+            },
+            {
+                heroTitle: "Your Washing Machine Misses You. We Don't.",
+                heroSubtitle: "Break up with your washing machine. SpinDoor is your new, highly efficient, extremely attractive laundry partner. 💔",
+                formTitle: "Start A New Laundry Relationship",
+                formSubtitle: "Swipe right on clean clothes. Book below."
+            },
+            {
+                heroTitle: "The Only Thing You Should Iron Is Your Life Out.",
+                heroSubtitle: "Leave the clothes to the professionals. Crisp, wrinkle-free delivery straight to your door in 24 hours. 👔",
+                formTitle: "Wrinkle-Free Clothing Zone",
+                formSubtitle: "Schedule your laundry pickup right here."
+            },
+            {
+                heroTitle: "Don't Be The Smelly Friend.",
+                heroSubtitle: "You know they notice. Get your wardrobe professionally cleaned and become the friend who always smells amazing. ✨",
+                formTitle: "Upgrade Your Wardrobe Scent",
+                formSubtitle: "Book a wash now. Your friends will thank you."
+            },
+            {
+                heroTitle: "We Wash Away Last Night's Mistakes.",
+                heroSubtitle: "Whatever happened at the club stays at the club. We'll make sure the evidence is completely washed out of your favorite shirt. 🪩",
+                formTitle: "Destroy The Dirty Evidence",
+                formSubtitle: "Quick and discreet laundry pickup. Let's go."
+            },
+            {
+                heroTitle: "Because 'Vintage' Doesn't Mean 'Unwashed'.",
+                heroSubtitle: "Take care of your thrifts. We use premium, fabric-safe detergents to keep your fits looking absolutely pristine. 👗",
+                formTitle: "Protect The Drip (And Wash It)",
+                formSubtitle: "Where should we grab your laundry haul?"
+            },
+            {
+                heroTitle: "Your Wardrobe Is Screaming For Help.",
+                heroSubtitle: "We heard it from here. Let us rescue your garments from the dark depths of the laundry basket. 🦸‍♂️",
+                formTitle: "Send The Laundry Rescue Team",
+                formSubtitle: "We're standing by. Book your clothes pickup."
+            },
+            {
+                heroTitle: "We Treat Your Clothes Better Than Your Ex Did.",
+                heroSubtitle: "No toxic cycles here. Just gentle washing, premium drying, and a whole lot of love and care for your favorite fits. 💔",
+                formTitle: "Healthy Laundry Relationships",
+                formSubtitle: "Enter your details for the cleanest clothes."
+            },
+            {
+                heroTitle: "Stop Buying New Clothes Just To Avoid Laundry.",
+                heroSubtitle: "We see you ordering from Myntra just because you ran out of clean shirts. Stop it. Call us instead. 💳",
+                formTitle: "Save Your Wallet, Wash Clothes",
+                formSubtitle: "Booking us is cheaper than a new wardrobe."
+            },
+            {
+                heroTitle: "We Fold Under Pressure (Perfectly).",
+                heroSubtitle: "You crack under pressure. We fold under pressure. Like, literally, perfectly square, Marie Kondo style folds. 📦",
+                formTitle: "Fold My Laundry Problems Away",
+                formSubtitle: "Drop your address. We'll wash and fold it."
+            },
+            {
+                heroTitle: "Laundry: The Sponsor Of Your Existential Dread.",
+                heroSubtitle: "Cancel the subscription. SpinDoor takes away the dread, the sorting, and the endless folding. 🌀",
+                formTitle: "Cancel The Laundry Dread",
+                formSubtitle: "Book a wash now and breathe easier."
+            },
+            {
+                heroTitle: "Put Down The Detergent And Back Away Slowly.",
+                heroSubtitle: "You don't know what you're doing. Step aside and let the premium professionals handle the delicate cycles. 🛑",
+                formTitle: "I Surrender To Laundry",
+                formSubtitle: "Let the pros wash your clothes. Book below."
+            },
+            {
+                heroTitle: "Your Laundry Pile Declared Independence.",
+                heroSubtitle: "It's growing. It's evolving. It has its own ecosystem. Let us conquer it before it takes over your entire room. 🏔️",
+                formTitle: "Conquer The Laundry Mountain",
+                formSubtitle: "Send in the laundry troops by booking here."
+            },
+            {
+                heroTitle: "We Do Laundry So You Can Do Literally Anything Else.",
+                heroSubtitle: "Go touch grass. Play video games. Sleep for 14 hours. Whatever you do, just don't do laundry. 🎮",
+                formTitle: "Free Up My Laundry Time",
+                formSubtitle: "Schedule your laundry pickup right here."
+            },
+            {
+                heroTitle: "Save Water. Let Us Do It.",
+                heroSubtitle: "Be eco-friendly while being incredibly lazy. Our commercial machines are way better for the planet than yours. 🌍",
+                formTitle: "Save The Planet (And My Laundry Sanity)",
+                formSubtitle: "Drop your laundry pickup details to go green."
+            },
+            {
+                heroTitle: "Look Like You Have Your Life Together.",
+                heroSubtitle: "Nothing says 'I am a functioning adult' like wearing clothes that are actually clean and professionally ironed. 🕴️",
+                formTitle: "Fake Clean Clothes Till You Make It",
+                formSubtitle: "Book a wash to upgrade your aura."
+            },
+            {
+                heroTitle: "Your Favorite Hoodie Deserves A Spa Day.",
+                heroSubtitle: "It's been there for you through breakups, hangovers, and bad weather. Treat it right with a premium wash cycle. 🧖‍♀️",
+                formTitle: "Treat My Hoodie Right",
+                formSubtitle: "Enter your pickup location for VIP laundry treatment."
+            },
+            {
+                heroTitle: "Tinder For Your Laundry. Perfect Match Every Time.",
+                heroSubtitle: "We match your darks, we pair your socks, and we swipe right on keeping your clothes looking flawless. 🔥",
+                formTitle: "Swipe Right On Clean Clothes",
+                formSubtitle: "It's a perfect match. Book your laundry pickup."
+            }
+        ];
+
+        // Execute immediately (since elements are already parsed above this script tag)
+        const randomQuote = sarcasticQuotesList[Math.floor(Math.random() * sarcasticQuotesList.length)];
+        const hTitle = document.getElementById("hero-title");
+        const hSub = document.getElementById("hero-subtitle");
+        const fTitle = document.getElementById("form-title");
+        const fSub = document.getElementById("form-subtitle");
+        
+        if (hTitle) hTitle.innerText = randomQuote.heroTitle;
+        if (hSub) hSub.innerText = randomQuote.heroSubtitle;
+        if (fTitle) fTitle.innerText = randomQuote.formTitle;
+        if (fSub) fSub.innerText = randomQuote.formSubtitle;
+    </script>
+    
+    <!-- Custom Beautiful Alert Modal -->
+    <div id="custom-alert" class="custom-alert-overlay hidden">
+        <div class="custom-alert-box">
+            <div class="alert-icon">🎉</div>
+            <h3 class="alert-title">Awesome!</h3>
+            <p class="alert-message">Your pickup has been scheduled successfully!</p>
+            <button class="btn-primary alert-close-btn" onclick="document.getElementById('custom-alert').classList.add('hidden')">Got it!</button>
+        </div>
+    </div>
+
+    <script src="script.js?v=5"></script>
+</body>
+</html>
