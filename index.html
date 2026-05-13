@@ -43,12 +43,18 @@
         function adjustNavbar() {
             const banner = document.getElementById('top-banner');
             const navbar = document.querySelector('.navbar');
-            const main = document.querySelector('main');
+            const priceBanner = document.getElementById('price-banner');
             const bannerH = banner.offsetHeight;
-            navbar.style.top = bannerH + 'px';
-            // Also push main content down so nothing hides behind fixed header
             const navbarH = navbar.offsetHeight;
-            if (main) main.style.paddingTop = (bannerH + navbarH) + 'px';
+            navbar.style.top = bannerH + 'px';
+            // Position price banner right below navbar
+            if (priceBanner) {
+                priceBanner.style.top = (bannerH + navbarH) + 'px';
+                const priceH = priceBanner.offsetHeight;
+                document.documentElement.style.setProperty('--header-offset', (bannerH + navbarH + priceH) + 'px');
+            } else {
+                document.documentElement.style.setProperty('--header-offset', (bannerH + navbarH) + 'px');
+            }
         }
         window.addEventListener('load', adjustNavbar);
         window.addEventListener('resize', adjustNavbar);
@@ -78,6 +84,13 @@
             </nav>
         </div>
     </header>
+
+    <!-- Animated Price Banner -->
+    <div class="price-banner" id="price-banner">
+        <span class="price-tag">🧹 Laundry Starting at just</span>
+        <span class="price-amount">₹79</span>
+        <a href="#booking" class="price-cta">Book Now →</a>
+    </div>
 
     <!-- Main Content -->
     <main>
