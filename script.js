@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             `🏠 *Address:* ${data.address || 'N/A'}\n` +
                             `👕 *Service:* ${data.service || 'N/A'}\n` +
                             `🗓 *Pickup Date:* ${data.date || 'N/A'}\n\n` +
+                            `🗓 *Promo Code:* ${data.coupon_code || 'N/A'}\n\n` +
                             `🚀 *SpinDoor - Wash away your troubles!*`;
 
             const telegramUrl = `https://api.telegram.org/bot${pt1}:${pt2}/sendMessage`;
