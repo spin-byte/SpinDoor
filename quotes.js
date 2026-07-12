@@ -3,7 +3,7 @@
 const sarcasticQuotes = [
     {
         heroTitle: "Your Mom Called. She's Tired Of Your Laundry.",
-        heroSubtitle: "Hyderabad's most unapologetically premium laundry service. We wash, dry, and fold so you can go back to doomscrolling. You're welcome. 💅",
+        heroSubtitle: "Thane's most unapologetically premium laundry service. We wash, dry, and fold so you can go back to doomscrolling. You're welcome. 💅",
         formTitle: "Drop the Baggage (Literally)",
         formSubtitle: "Fill this out. We'll grab your dirty piles before they mutate. 🦠"
     },
