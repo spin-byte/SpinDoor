@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpinDoor | Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+--primary:#FF007A;
+--secondary:#6200EA;
+--accent:#00E5FF;
+--bg:#F8F9FA;
+--text:#1A1A2E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:'Outfit',sans-serif;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+}
+h1,h2,h3{font-family:'Fredoka',sans-serif}
+.floating{position:fixed;inset:0;pointer-events:none;z-index:-1}
+.bubble{
+position:absolute;font-size:2.5rem;opacity:.08;
+animation:float 18s linear infinite;
+}
+.b1{left:8%;animation-duration:15s}
+.b2{left:30%;animation-duration:20s;animation-delay:3s}
+.b3{left:55%;animation-duration:17s}
+.b4{left:78%;animation-duration:22s;animation-delay:6s}
+@keyframes float{
+from{transform:translateY(110vh) rotate(0)}
+to{transform:translateY(-20vh) rotate(360deg)}
+}
+header{
+position:sticky;top:0;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+z-index:999;
+}
+.logo{display:flex;align-items:center;gap:15px}
+.logo img{width:60px}
+.logo span{
+font-family:'Fredoka';
+font-size:2rem;
+color:var(--primary);
+}
+.btn{
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:#fff;
+padding:12px 26px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+}
+.hero{
+padding:80px 6% 40px;
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:70px;
+flex-wrap:wrap;
+}
+.hero img{
+width:260px;
+animation:wobble 4s ease-in-out infinite;
+filter:drop-shadow(0 20px 30px rgba(98,0,234,.25));
+}
+@keyframes wobble{
+50%{transform:translateY(-12px) rotate(2deg)}
+}
+.tag{
+display:inline-block;
+padding:10px 22px;
+border-radius:40px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:#fff;
+font-weight:700;
+margin-bottom:18px;
+}
+.hero h1{
+font-size:3.2rem;
+line-height:1.1;
+margin-bottom:20px;
+background:linear-gradient(45deg,var(--secondary),var(--primary));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.hero p{font-size:1.15rem;line-height:1.8;color:#666}
+.container{
+max-width:1200px;
+margin:auto;
+padding:30px 6% 80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+.card{
+background:#fff;
+padding:35px;
+border-radius:28px;
+box-shadow:0 18px 40px rgba(98,0,234,.08);
+transition:.35s;
+}
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 50px rgba(255,0,122,.15);
+}
+.icon{
+width:70px;height:70px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:#fff;
+font-size:1.8rem;
+margin-bottom:20px;
+}
+.card h3{color:var(--secondary);margin-bottom:15px}
+.card p,.card li{color:#555;line-height:1.8}
+.card ul{padding-left:20px}
+.cta{
+max-width:1100px;
+margin:0 auto 70px;
+padding:55px 40px;
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:#fff;
+border-radius:35px;
+text-align:center;
+box-shadow:0 25px 60px rgba(98,0,234,.25);
+}
+.cta h2{font-size:2.3rem;margin-bottom:15px}
+.cta p{max-width:700px;margin:auto;line-height:1.9}
+footer{
+background:var(--secondary);
+padding:40px;
+color:#fff;
+text-align:center;
+}
+footer a{color:#fff}
+@media(max-width:768px){
+.hero{text-align:center;justify-content:center}
+.hero h1{font-size:2.4rem}
+.logo span{font-size:1.6rem}
+}
+</style>
+</head>
+<body>
+
+<div class="floating">
+<div class="bubble b1">🫧</div>
+<div class="bubble b2">👕</div>
+<div class="bubble b3">✨</div>
+<div class="bubble b4">🧦</div>
+</div>
+
+<header>
+<div class="logo">
+<img src="new_logo.png" alt="SpinDoor">
+<span>SpinDoor</span>
+</div>
+<a href="index.html" class="btn">← Back Home</a>
+</header>
+
+<section class="hero">
+<img src="new_logo.png" alt="Mascot">
+<div>
+<div class="tag">🔒 Privacy Policy</div>
+<h1>We Wash Clothes.<br>Not Your Personal Data.</h1>
+<p>Your hoodie may have stains. Your personal information doesn't. This page explains what information SpinDoor collects, why we collect it, and how we protect it.</p>
+</div>
+</section>
+
+<section class="container">
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-user"></i></div>
+<h3>Information We Collect</h3>
+<ul>
+<li>Name</li>
+<li>Phone Number</li>
+<li>Email Address (optional)</li>
+<li>Pickup & Delivery Address</li>
+<li>Booking Details</li>
+<li>Payment information handled securely by payment providers.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+<h3>Why We Collect It</h3>
+<ul>
+<li>Schedule pickups</li>
+<li>Deliver clean clothes</li>
+<li>Send booking updates</li>
+<li>Customer support</li>
+<li>Improve our services</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-lock"></i></div>
+<h3>Data Protection</h3>
+<p>We use reasonable administrative and technical safeguards to protect customer information. Access is limited to personnel who require it to provide our services.</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-handshake"></i></div>
+<h3>Sharing Information</h3>
+<p>We do not sell or rent your personal information. We only share the minimum information required with trusted service providers such as payment processors or delivery personnel when necessary.</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-cookie-bite"></i></div>
+<h3>Cookies</h3>
+<p>Our website may use cookies and analytics technologies to improve website functionality and understand visitor interactions.</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-user-check"></i></div>
+<h3>Your Rights</h3>
+<p>You may request access to your personal information, request corrections, or request deletion where permitted by applicable law.</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-headset"></i></div>
+<h3>Contact Us</h3>
+<p>Questions about privacy?<br><br>
+📞 +91 9032822594<br>
+🌐 https://spindoor.in
+</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+<h3>Policy Updates</h3>
+<p>We may update this Privacy Policy periodically. Any changes will be posted on this page with the revised effective date.</p>
+</div>
+
+</section>
+
+<div class="cta">
+<h2>🫧 One Last Thing…</h2>
+<p>Your laundry goes through multiple wash cycles. Your personal information doesn't. We collect only the information required to provide laundry and dry-cleaning services.</p>
+</div>
+
+<footer>
+<p>© 2026 SpinDoor Laundry. All Rights Reserved.</p>
+<p><a href="https://spindoor.in">https://spindoor.in</a></p>
+</footer>
+
+<script>
+document.querySelectorAll(".card").forEach((c,i)=>{
+c.style.opacity=0;
+c.style.transform="translateY(30px)";
+setTimeout(()=>{
+c.style.transition="all .6s ease";
+c.style.opacity=1;
+c.style.transform="translateY(0)";
+},i*120);
+});
+</script>
+
+</body>
+</html>
